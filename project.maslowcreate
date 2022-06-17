@@ -8,18 +8,442 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Code",
+            "name": "Code",
+            "x": 0.17013888888888887,
+            "y": 0.5915492957746479,
+            "uniqueID": 447518,
+            "ioValues": [],
+            "code": "// SDS011 dust sensor example\n// -----------------------------\n//\n// By R. Zschiegner (rz@madavi.de). https://github.com/misan/SDS011\n// April 2016\n\n#include \"SDS011.h\"\n\nfloat p10, p25;\nint err;\n\nSDS011 my_sds;\n\n#ifdef ESP32\nHardwareSerial port(2);\n#endif\n\nvoid setup() {\n  my_sds.begin(&port);\n  Serial.begin(115200);\n}\n\nvoid loop() {\n  err = my_sds.read(&p25, &p10);\n  if (!err) {\n    Serial.println(\"P2.5: \" + String(p25));\n    Serial.println(\"P10:  \" + String(p10));\n  }\n  delay(100);\n}"
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Blower Fan",
+            "x": 0.3034722222222222,
+            "y": 0.5387323943661971,
+            "uniqueID": 639766,
+            "ioValues": [],
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.31875,
+                    "y": 0.24647887323943662,
+                    "uniqueID": 320678,
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 120
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 120
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.4944444444444444,
+                    "y": 0.34154929577464793,
+                    "uniqueID": 665625,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "source/282446/639766/320678Rectangle"
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 5
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "Outlet",
+                    "x": 0.34444444444444444,
+                    "y": 0.4964788732394367,
+                    "uniqueID": 115490,
+                    "ioValues": [],
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Rectangle",
+                            "name": "Rectangle",
+                            "x": 0.29930555555555555,
+                            "y": 0.1936619718309859,
+                            "uniqueID": 275041,
+                            "ioValues": [
+                                {
+                                    "name": "x length",
+                                    "ioValue": 50
+                                },
+                                {
+                                    "name": "y length",
+                                    "ioValue": 61
+                                }
+                            ]
+                        },
+                        {
+                            "atomType": "Extrude",
+                            "name": "Extrude",
+                            "x": 0.44930555555555557,
+                            "y": 0.545774647887324,
+                            "uniqueID": 661192,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": "source/282446/639766/115490/275041Rectangle"
+                                },
+                                {
+                                    "name": "height",
+                                    "ioValue": 33
+                                }
+                            ]
+                        },
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.9861111111111112,
+                            "y": 0.5,
+                            "uniqueID": 203142,
+                            "ioValues": [
+                                {
+                                    "name": "number or geometry",
+                                    "ioValue": "source/282446/639766/115490/661192Extrude"
+                                }
+                            ]
+                        }
+                    ],
+                    "allConnectors": [
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 275041,
+                            "ap2ID": 661192
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "number or geometry",
+                            "ap2Primary": false,
+                            "ap1ID": 661192,
+                            "ap2ID": 203142
+                        }
+                    ],
+                    "fileTypeVersion": 1,
+                    "simplify": false,
+                    "unitsIndex": 0
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.4569444444444445,
+                    "y": 0.5176056338028169,
+                    "uniqueID": 593728,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "source/282446/639766/115490Molecule"
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": -35
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 29.5
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Assembly",
+                    "name": "Assembly",
+                    "x": 0.6013888888888889,
+                    "y": 0.6232394366197183,
+                    "uniqueID": 247336,
+                    "ioValues": [
+                        {
+                            "name": "3D shape 2",
+                            "ioValue": "source/282446/639766/665625Extrude"
+                        },
+                        {
+                            "name": "3D shape 3",
+                            "ioValue": "source/282446/639766/593728Move"
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "Fan",
+                    "x": 0.3652777777777778,
+                    "y": 0.7922535211267606,
+                    "uniqueID": 584188,
+                    "ioValues": [],
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.9861111111111112,
+                            "y": 0.5,
+                            "uniqueID": 446933,
+                            "ioValues": []
+                        }
+                    ],
+                    "allConnectors": [],
+                    "fileTypeVersion": 1,
+                    "simplify": false,
+                    "unitsIndex": 0
+                },
+                {
+                    "atomType": "Difference",
+                    "name": "Difference",
+                    "x": 0.7826388888888889,
+                    "y": 0.5387323943661971,
+                    "uniqueID": 943774,
+                    "ioValues": [
+                        {
+                            "name": "geometry2",
+                            "ioValue": "source/282446/639766/164170Molecule"
+                        },
+                        {
+                            "name": "geometry1",
+                            "ioValue": "source/282446/639766/247336Assembly"
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "Bolts",
+                    "x": 0.6819444444444445,
+                    "y": 0.7746478873239436,
+                    "uniqueID": 164170,
+                    "ioValues": [],
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Circle",
+                            "name": "Circle",
+                            "x": 0.09305555555555554,
+                            "y": 0.43309859154929575,
+                            "uniqueID": 194064,
+                            "ioValues": [
+                                {
+                                    "name": "diameter",
+                                    "ioValue": 4.5
+                                }
+                            ]
+                        },
+                        {
+                            "atomType": "Extrude",
+                            "name": "Extrude",
+                            "x": 0.4340277777777778,
+                            "y": 0.5387323943661971,
+                            "uniqueID": 348593,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": "source/282446/639766/164170/194064Circle"
+                                },
+                                {
+                                    "name": "height",
+                                    "ioValue": 50
+                                }
+                            ]
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.5770833333333334,
+                            "y": 0.4084507042253521,
+                            "uniqueID": 191330,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": "source/282446/639766/164170/348593Extrude"
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 52.5
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 52.5
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": 0
+                                }
+                            ]
+                        },
+                        {
+                            "atomType": "GitHubMolecule",
+                            "name": "Rotational Pattern",
+                            "x": 0.6611111111111111,
+                            "y": 0.6654929577464789,
+                            "uniqueID": 350354,
+                            "projectID": "209940609",
+                            "ioValues": [
+                                {
+                                    "name": "Angle",
+                                    "ioValue": 90
+                                },
+                                {
+                                    "name": "Number",
+                                    "ioValue": 2
+                                }
+                            ],
+                            "simplify": false
+                        },
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.9861111111111112,
+                            "y": 0.5,
+                            "uniqueID": 205823,
+                            "ioValues": [
+                                {
+                                    "name": "number or geometry",
+                                    "ioValue": "source/282446/639766/164170/350354GitHubMolecule"
+                                }
+                            ]
+                        }
+                    ],
+                    "allConnectors": [
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 194064,
+                            "ap2ID": 348593
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 348593,
+                            "ap2ID": 191330
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "Shape",
+                            "ap2Primary": false,
+                            "ap1ID": 191330,
+                            "ap2ID": 350354
+                        },
+                        {
+                            "ap1Name": "Geometry",
+                            "ap2Name": "number or geometry",
+                            "ap2Primary": false,
+                            "ap1ID": 350354,
+                            "ap2ID": 205823
+                        }
+                    ],
+                    "fileTypeVersion": 1,
+                    "simplify": false,
+                    "unitsIndex": 0
+                },
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.9861111111111112,
+                    "y": 0.5,
+                    "uniqueID": 947563,
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": "source/282446/639766/943774Difference"
+                        }
+                    ]
+                }
+            ],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 320678,
+                    "ap2ID": 665625
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 2",
+                    "ap2Primary": false,
+                    "ap1ID": 665625,
+                    "ap2ID": 247336
+                },
+                {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 115490,
+                    "ap2ID": 593728
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 3",
+                    "ap2Primary": false,
+                    "ap1ID": 593728,
+                    "ap2ID": 247336
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry1",
+                    "ap2Primary": false,
+                    "ap1ID": 247336,
+                    "ap2ID": 943774
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 943774,
+                    "ap2ID": 947563
+                },
+                {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "geometry2",
+                    "ap2Primary": false,
+                    "ap1ID": 164170,
+                    "ap2ID": 943774
+                }
+            ],
+            "fileTypeVersion": 1,
+            "simplify": false,
+            "unitsIndex": 0
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9861111111111112,
             "y": 0.5,
             "uniqueID": 170160,
-            "ioValues": []
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "source/282446/639766Molecule"
+                }
+            ]
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 639766,
+            "ap2ID": 170160
+        }
+    ],
     "fileTypeVersion": 1,
     "simplify": false,
     "unitsIndex": 0,
     "filetypeVersion": 1,
-    "circleSegmentSize": 2
+    "circleSegmentSize": "0.051"
 }
