@@ -3620,6 +3620,23 @@
                     "simplify": false
                 },
                 {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.7896825396825398,
+                    "y": 0.5292307692307692,
+                    "uniqueID": 672175,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "source/282446/418596/518655Difference"
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 38
+                        }
+                    ]
+                },
+                {
                     "atomType": "Difference",
                     "name": "Difference",
                     "x": 0.7043650793650793,
@@ -3633,23 +3650,6 @@
                         {
                             "name": "geometry1",
                             "ioValue": "source/282446/418596/476724Difference"
-                        }
-                    ]
-                },
-                {
-                    "atomType": "Extrude",
-                    "name": "Extrude",
-                    "x": 0.7910052910052909,
-                    "y": 0.5784615384615385,
-                    "uniqueID": 672175,
-                    "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": "source/282446/418596/518655Difference"
-                        },
-                        {
-                            "name": "height",
-                            "ioValue": 38
                         }
                     ]
                 },
@@ -3726,17 +3726,17 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 518655,
-                    "ap2ID": 672175
-                },
-                {
-                    "ap1Name": "geometry",
                     "ap2Name": "number or geometry",
                     "ap2Primary": false,
                     "ap1ID": 672175,
                     "ap2ID": 130247
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 518655,
+                    "ap2ID": 672175
                 }
             ],
             "fileTypeVersion": 1,
@@ -5690,8 +5690,8 @@
                 {
                     "atomType": "Assembly",
                     "name": "Assembly",
-                    "x": 0.371031746031746,
-                    "y": 0.5876923076923077,
+                    "x": 0.3697089947089947,
+                    "y": 0.5538461538461539,
                     "uniqueID": 844887,
                     "ioValues": [
                         {
