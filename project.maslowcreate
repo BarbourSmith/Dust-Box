@@ -1785,7 +1785,7 @@
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": 23
+                                    "ioValue": 23.5
                                 },
                                 {
                                     "name": "yDist",
@@ -1818,7 +1818,7 @@
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": 23
+                                    "ioValue": 23.5
                                 },
                                 {
                                     "name": "yDist",
@@ -1843,7 +1843,7 @@
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": -23
+                                    "ioValue": -23.5
                                 },
                                 {
                                     "name": "yDist",
@@ -1897,7 +1897,7 @@
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": -23
+                                    "ioValue": -23.5
                                 },
                                 {
                                     "name": "yDist",
@@ -2911,7 +2911,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 45
+                            "ioValue": 49
                         },
                         {
                             "name": "yDist",
@@ -5549,8 +5549,8 @@
         {
             "atomType": "Molecule",
             "name": "Outflow",
-            "x": 0.4411375661375661,
-            "y": 0.8215384615384614,
+            "x": 0.4378306878306878,
+            "y": 0.8,
             "uniqueID": 152775,
             "ioValues": [
                 {
