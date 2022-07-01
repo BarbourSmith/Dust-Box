@@ -2926,8 +2926,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "Dust Capture Box",
-                    "x": 0.1197089947089947,
-                    "y": 0.7784615384615385,
+                    "x": 0.12037037037037036,
+                    "y": 0.7876923076923077,
                     "uniqueID": 118627,
                     "ioValues": [
                         {
@@ -2977,8 +2977,8 @@
                         {
                             "atomType": "Molecule",
                             "name": "Box",
-                            "x": 0.3458994708994709,
-                            "y": 0.43692307692307697,
+                            "x": 0.34391534391534395,
+                            "y": 0.43076923076923074,
                             "uniqueID": 666127,
                             "ioValues": [],
                             "topLevel": false,
@@ -2996,15 +2996,15 @@
                                         },
                                         {
                                             "name": "y length",
-                                            "ioValue": 205
+                                            "ioValue": 170
                                         }
                                     ]
                                 },
                                 {
                                     "atomType": "Move",
                                     "name": "Move",
-                                    "x": 0.3716931216931217,
-                                    "y": 0.4338461538461538,
+                                    "x": 0.375,
+                                    "y": 0.4246153846153847,
                                     "uniqueID": 588811,
                                     "ioValues": [
                                         {
@@ -3013,7 +3013,7 @@
                                         },
                                         {
                                             "name": "xDist",
-                                            "ioValue": 85
+                                            "ioValue": 110
                                         },
                                         {
                                             "name": "yDist",
@@ -3095,8 +3095,8 @@
                                 {
                                     "atomType": "Move",
                                     "name": "Move",
-                                    "x": 0.39153439153439157,
-                                    "y": 0.6276923076923078,
+                                    "x": 0.39285714285714285,
+                                    "y": 0.6369230769230769,
                                     "uniqueID": 302672,
                                     "ioValues": [
                                         {
@@ -3105,7 +3105,7 @@
                                         },
                                         {
                                             "name": "xDist",
-                                            "ioValue": -85
+                                            "ioValue": -110
                                         },
                                         {
                                             "name": "yDist",
@@ -3143,7 +3143,7 @@
                                         },
                                         {
                                             "name": "xDist",
-                                            "ioValue": 85
+                                            "ioValue": 110
                                         },
                                         {
                                             "name": "yDist",
@@ -3168,7 +3168,7 @@
                                         },
                                         {
                                             "name": "xDist",
-                                            "ioValue": -85
+                                            "ioValue": -110
                                         },
                                         {
                                             "name": "yDist",
@@ -3330,8 +3330,8 @@
                         {
                             "atomType": "Molecule",
                             "name": "Corner Posts",
-                            "x": 0.2837301587301587,
-                            "y": 0.7938461538461539,
+                            "x": 0.28835978835978837,
+                            "y": 0.7846153846153847,
                             "uniqueID": 909700,
                             "ioValues": [
                                 {
@@ -3384,7 +3384,7 @@
                                         },
                                         {
                                             "name": "height",
-                                            "ioValue": 55
+                                            "ioValue": 75
                                         }
                                     ]
                                 },
@@ -3401,7 +3401,7 @@
                                         },
                                         {
                                             "name": "xDist",
-                                            "ioValue": 85.5
+                                            "ioValue": 110.5
                                         },
                                         {
                                             "name": "yDist",
@@ -3433,8 +3433,8 @@
                                 {
                                     "atomType": "Move",
                                     "name": "Move",
-                                    "x": 0.6018518518518519,
-                                    "y": 0.3169230769230769,
+                                    "x": 0.6051587301587301,
+                                    "y": 0.28923076923076924,
                                     "uniqueID": 983200,
                                     "ioValues": [
                                         {
@@ -3443,7 +3443,7 @@
                                         },
                                         {
                                             "name": "xDist",
-                                            "ioValue": -85.5
+                                            "ioValue": -110.5
                                         },
                                         {
                                             "name": "yDist",
@@ -3459,15 +3459,15 @@
                                     "atomType": "Input",
                                     "name": "Support Post",
                                     "x": 0.013333333333333334,
-                                    "y": 0.7415384615384615,
+                                    "y": 0.7323076923076923,
                                     "uniqueID": 104713,
                                     "ioValues": []
                                 },
                                 {
                                     "atomType": "Move",
                                     "name": "Move",
-                                    "x": 0.41534391534391535,
-                                    "y": 0.6676923076923077,
+                                    "x": 0.40939153439153436,
+                                    "y": 0.6615384615384615,
                                     "uniqueID": 868336,
                                     "ioValues": [
                                         {
@@ -3484,15 +3484,15 @@
                                         },
                                         {
                                             "name": "zDist",
-                                            "ioValue": 60
+                                            "ioValue": 80
                                         }
                                     ]
                                 },
                                 {
                                     "atomType": "Move",
                                     "name": "Move",
-                                    "x": 0.6197089947089947,
-                                    "y": 0.5415384615384615,
+                                    "x": 0.6124338624338624,
+                                    "y": 0.5292307692307692,
                                     "uniqueID": 588108,
                                     "ioValues": [
                                         {
@@ -3501,7 +3501,7 @@
                                         },
                                         {
                                             "name": "xDist",
-                                            "ioValue": 85.5
+                                            "ioValue": 110.5
                                         },
                                         {
                                             "name": "yDist",
@@ -3551,7 +3551,7 @@
                                         },
                                         {
                                             "name": "xDist",
-                                            "ioValue": -85.5
+                                            "ioValue": -110.5
                                         },
                                         {
                                             "name": "yDist",
@@ -3684,8 +3684,8 @@
                         {
                             "atomType": "Molecule",
                             "name": "Walls",
-                            "x": 0.5185185185185185,
-                            "y": 0.8523076923076923,
+                            "x": 0.5244708994708994,
+                            "y": 0.8430769230769231,
                             "uniqueID": 344141,
                             "ioValues": [],
                             "topLevel": false,
@@ -3720,7 +3720,7 @@
                                         },
                                         {
                                             "name": "xDist",
-                                            "ioValue": 85
+                                            "ioValue": 110
                                         },
                                         {
                                             "name": "yDist",
@@ -3795,7 +3795,7 @@
                                         },
                                         {
                                             "name": "xDist",
-                                            "ioValue": -85
+                                            "ioValue": -110
                                         },
                                         {
                                             "name": "yDist",
@@ -3833,7 +3833,7 @@
                                         },
                                         {
                                             "name": "height",
-                                            "ioValue": 60
+                                            "ioValue": 80
                                         }
                                     ]
                                 },
@@ -3867,7 +3867,7 @@
                                         },
                                         {
                                             "name": "xDist",
-                                            "ioValue": 85
+                                            "ioValue": 110
                                         },
                                         {
                                             "name": "yDist",
@@ -3913,8 +3913,8 @@
                                 {
                                     "atomType": "Move",
                                     "name": "Move",
-                                    "x": 0.503968253968254,
-                                    "y": 0.8307692307692307,
+                                    "x": 0.509920634920635,
+                                    "y": 0.8184615384615385,
                                     "uniqueID": 159908,
                                     "ioValues": [
                                         {
@@ -3923,7 +3923,7 @@
                                         },
                                         {
                                             "name": "xDist",
-                                            "ioValue": -85
+                                            "ioValue": -110
                                         },
                                         {
                                             "name": "yDist",
@@ -3953,23 +3953,10 @@
                                     ]
                                 },
                                 {
-                                    "atomType": "Output",
-                                    "name": "Output",
-                                    "x": 0.9867724867724867,
-                                    "y": 0.5,
-                                    "uniqueID": 552706,
-                                    "ioValues": [
-                                        {
-                                            "name": "number or geometry",
-                                            "ioValue": "source/282446/522912/118627/344141/311624Tag"
-                                        }
-                                    ]
-                                },
-                                {
                                     "atomType": "Molecule",
                                     "name": "Slits",
                                     "x": 0.707010582010582,
-                                    "y": 0.8584615384615385,
+                                    "y": 0.8307692307692307,
                                     "uniqueID": 449746,
                                     "ioValues": [],
                                     "topLevel": false,
@@ -4012,7 +3999,7 @@
                                                 },
                                                 {
                                                     "name": "y length",
-                                                    "ioValue": 40
+                                                    "ioValue": 60
                                                 }
                                             ]
                                         },
@@ -4054,7 +4041,7 @@
                                                 },
                                                 {
                                                     "name": "zDist",
-                                                    "ioValue": 23
+                                                    "ioValue": 38
                                                 }
                                             ]
                                         },
@@ -4131,6 +4118,19 @@
                                     "fileTypeVersion": 1,
                                     "simplify": false,
                                     "unitsIndex": 0
+                                },
+                                {
+                                    "atomType": "Output",
+                                    "name": "Output",
+                                    "x": 0.9867724867724867,
+                                    "y": 0.5,
+                                    "uniqueID": 552706,
+                                    "ioValues": [
+                                        {
+                                            "name": "number or geometry",
+                                            "ioValue": "source/282446/522912/118627/344141/311624Tag"
+                                        }
+                                    ]
                                 }
                             ],
                             "allConnectors": [
@@ -4254,7 +4254,7 @@
                         {
                             "atomType": "ExtractTag",
                             "name": "Extract Tag",
-                            "x": 0.7539682539682541,
+                            "x": 0.7566137566137566,
                             "y": 0.7476923076923077,
                             "uniqueID": 205292,
                             "ioValues": [
